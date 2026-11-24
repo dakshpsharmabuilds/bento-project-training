@@ -44,19 +44,19 @@ body {
     height: 390px;
 }
 .RR1{
-    border: blue solid 2px;
+  
     border-radius: 10px;
     height:546px;
     display: flex;
     flex-direction: row;
-    border : red solid 2px;
+    /* border : red solid 2px; */
     gap:30px;
 }
 .RR2{
     height:224px;
     display: flex;
     flex-direction: row;
-    border: 2px yellow solid;
+    /* border: 2px yellow solid; */
     border-radius: 10px;
     gap:30px;
 }
@@ -72,6 +72,7 @@ body {
     width: 494px;
     display: flex;
     flex-direction: column;
+    gap:30px;
 }
 .RR1C2{
     width:232px;
@@ -80,14 +81,20 @@ body {
 }
 .RR1C1R1{
  background-color:  hsl(256, 67%, 59%);
+ height:650px;
 }
-/* .RR1C1R2{
+.RR1C1R2{
     display: flex;
     flex-direction: row;
+    
 }
 .RR1C1R2C1{
     background-color: white;
+    width:235px;
+    height: 232px;
 }
 .RR1C1R2C2{
+    width:232px;
+    height:255px;
     background-color: #ffcc69;
-} */
+} 
