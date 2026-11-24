@@ -1,0 +1,45 @@
+body {
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    height: 930px;
+    width:1298px;
+    gap:30px;
+    display: flex;
+    border: solid black 2px;
+    
+    
+
+}
+
+.col_left{
+    margin-left: 140px;
+    margin-top:80px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.col_right{
+    border: red solid 2px;
+    width: 755px;
+    margin-top:80px;
+    margin-bottom:50px;
+}
+.LR1{
+    border-radius: 10px;
+    background-color: #faeee2;
+ 
+    height: 378px;
+}
+.LR2{
+    background-color: #ffcc69;
+    border-radius: 10px;
+
+    height: 390px;
+}
