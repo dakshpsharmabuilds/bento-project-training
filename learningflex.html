@@ -4,11 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <!-- okay so making separate classes and separate shits in boht html and css is better. but then is it always that children (nested div) will always act ALONG flex if their parents have it. becuz not mentioning the parent class inside in html and css kinda disldges the relationship on text. but does the system still consider them children, but also allowing them to have separate properties? Yes — exactly. The browser still knows the nesting relationship from the HTML structure itself. You do not need to repeat the parent class on the child for it to be considered a child. you dont need to remind css about the child-->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <!-- okay so making separate classes and separate shits in both html and css is better. but then is it always that children (nested div) will always act ALONG flex if their parents have it. becuz not mentioning the parent class inside in html and css kinda disldges the relationship on text. but does the system still consider them children, but also allowing them to have separate properties? Yes — exactly. The browser still knows the nesting relationship from the HTML structure itself. You do not need to repeat the parent class on the child for it to be considered a child. you dont need to remind css about the child-->
+    <!-- my main learning: separate text and img ka div jab banata hai, for the MOST customization power, and better option is .RR1 .text kar. always. its the best. no worries, sab dimensions bhi manually dal sakta. also dont forget .RR1 ko flex initialize karna-->
+    <!--div class="RR1C1R2C1 text" means: this ONE element has both classes: RR1C1R2C1 and text .A.B   = same element has both classes while .A .B  = B is inside A-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="flex.css">
   <title>bento challenge by flex</title>
+  
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="flex.css">
+
 </head>
 
 <body>
@@ -16,11 +26,15 @@
         <div class="col_left">
             <div class = "LR1">
                 <div class="LR1 text">Create and <br> schedule<br>  content <br> <span style="color:#7651dc"><em><i>quicker.</i></em></span></div>
-                <div class="LR1 img"></div>
+                <div class="img">
+                    <img src="assets/images/illustration-create-post.webp">
+                </div>
             </div>
             <div class = "LR2">
                 <div class="LR2 text">Write your <br>content<br>using AI.</div>
-                <div class="LR2 img"></div>
+                <div class="img">
+                    <img src="assets/images/illustration-ai-content.webp">
+                </div>
             </div>
         </div>
         <div class="col_right">
@@ -34,13 +48,43 @@
                            <div class="text2">
                                <i>Faster</i> with AI
                            </div>
+                           <div class="img">
+                            <img src="assets/images/illustration-five-stars.webp">
+                           </div>
+                           <div class="text3">
+                            Over 4000 5-star reviews
+                           </div>
                         </div>
                     <div class="RR1C1R2">
-                        <div class="RR1C1R2C1"></div>
-                        <div class="RR1C1R2C2"></div> 
+                        <div class="RR1C1R2C1">
+                            <div class="RR1C1R2C1 img"></div>
+                            <div class="RR1C1R2C1">
+                                <div class="img">
+                                    <img src="assets/images/illustration-multiple-platforms.webp">
+                                </div> 
+                                <div class="text">
+                                   <strong> Manage <br>multiple <br>accounts and<br> platforms. </strong>
+                                </div>
+                                    
+                            </div>
+                        </div>    
+                        <div class="RR1C1R2C2">
+                            <div class="text">
+                                <strong> Maintain a <br> consistent<br> posting<br> schedule. </strong>
+                            </div>
+                            <div class="img">
+                                <img src="assets/images/illustration-consistent-schedule.webp" height="150px" width="200px">
+                            </div>
+                        </div> 
                     </div>
                 </div>
-                <div class="RR1C2"></div>
+                <div class="RR1C2">
+                    <div class ="text"><b>Schedule to <br> social media.</b></div>
+                    <div class="img">
+                                <img src="assets/images/illustration-schedule-posts.webp" height="290px" width="320px">
+                            </div>
+                    <div class="text2">Optimise post timings <br> to publish content at <br> the perfect time for <br> your audience. </div>    
+                </div>
             </div>
 
 
@@ -49,11 +93,14 @@
             <div class="RR2">
                 <div class="RR2C1">
                     <div class="RR2C1 text1"><b>>56%</b></div><div class="RR2C1 text2"><br> faster audience growth</div>
-                    <div class="RR2C1 img"></div>
+                    <div class="img">
+                        <img src="assets/images/illustration-audience-growth.webp">
+                    </div>
                 </div>
                 <div class="RR2C2">
-                    <div class="RR2C2 img"></div>
+                    <div class="img"><img src="assets/images/illustration-grow-followers.webp"> </div>
                     <div class="RR2C2 text">Grow followers <br>with non-stop <br> content.</div>
+                    
                 </div>
             </div>
         </div>

@@ -1,17 +1,17 @@
 body {
     display:flex;
-    background-color: black;
+    background-color: white;
     align-items: center;
     justify-content: center;
+    font-family: "DM Sans", sans-serif;
 }
 
 .container{
-    background-color: rgb(199, 199, 199);
     height: 940px;
     width:1298px;
     gap:30px;
     display: flex;
-    border: solid black 2px;
+     box-shadow: 12px 18px 25px rgba(0, 0, 0, 0.22);    
 }
 
 .col_left{
@@ -41,12 +41,21 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .LR1.text{
     font-size: 30px;
-    font-family: sans-serif;
-    text-align: center;
+    font-weight:bold;
+    margin-left: 30px;
+    font-weight: 500;
+    line-height: 1;
     margin-top:70px;
+    
         
+}
+.LR1 .img img{
+    width:200px;
+    margin-bottom: 40px;
+    margin-left: 20px;;
 }
 .LR2{
     background-color: #ffcc69;
@@ -60,7 +69,13 @@ body {
     margin-left: 20px;
     font-size: 33px;
     font-weight: bold;  
-    font-family: sans-serif;
+   
+}
+.LR2 .img img{
+    margin-top:10px;
+    margin-left: 20px;
+    width: 210px;
+    margin-bottom: 20px;;
 }
 .RR1{
     border-radius: 15px;
@@ -87,19 +102,28 @@ body {
 }
 .RR2C1.text1{
     width:150px;
-    font-family: sans-serif;
-    font-size: 59px;
+    
+    font-size: 50px;
     margin-top: 20px;
     margin-left: 20px;
     height: 35px;
 }
 .RR2C1.text2{
-    width:210px;
-    font-family: sans-serif;
-  font-size: 20px;
-  margin-top:22px;
+  width:210px;
+  font-size: 19px;
+  margin-top:20px;
   margin-left: 15px;
   
+}
+.RR2C1 .img{
+    width:232px;
+    
+}
+.RR2C1 .img img{
+    width:180px;
+    margin-top:20px;
+    height: 65px;
+    margin-left: 15px;
 }
 .RR2C2{
     background-color:  hsl(256, 67%, 59%);
@@ -116,8 +140,14 @@ body {
     margin-top:50px;
     width:650px;
     font-size: 32px;
-    font-family: sans-serif;
+    
   
+}
+.RR2C2 .img img{
+    margin-top: 20px;
+    margin-left: 20px;;
+    width: 210px;
+    height: 190px;
 }
 .RR1C1{
     width: 494px;
@@ -132,6 +162,27 @@ body {
     height: 560px;
     border-radius: 15px;
     background-color: #dcd1fc;
+    display: flex;
+    flex-direction: column;
+}
+
+.RR1C2 .text{
+    margin-left:30px;
+    font-size:30px;
+    line-height: 1.1;
+    margin-top:50px;
+}
+.RR1C2 .img{
+    margin-left: 30px;
+    overflow: hidden;
+    margin-top:20px;
+}
+.RR1C2 .text2{
+    margin-left: 30px;
+    margin-top:10px;
+    font-size: 18px;
+     
+
 }
 .RR1C1R1{
  background-color:  hsl(256, 67%, 59%);
@@ -143,9 +194,10 @@ body {
  gap:5px;
 }
 .RR1C1R1 .text{
-    font-size: 40px;
+    font-size: 45px;
+    line-height: 1;
     text-align: center;
-    font-family: sans-serif;
+    font-weight: 500;
     color:white;
     white-space: nowrap;
     margin-top:30px;
@@ -153,12 +205,25 @@ body {
 
  .RR1C1R1 .text2{ 
     
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
-    font-family: sans-serif;
+     
     color:white;
 
 } 
+.RR1C1R1 .img img{
+    margin-top:18px;
+    margin-left: 160px;
+    height:35px;
+    width:190px;
+}
+.RR1C1R1 .text3{
+    margin-top:15px;
+    font-size:18px;
+    text-align: center;
+     
+    color:white;
+}
 .RR1C1R2 {
     display: flex;
     flex-direction: row;
@@ -168,17 +233,52 @@ body {
 }
 
 .RR1C1R2C1 {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width: 232px;
     height: 100%;
     border-radius: 15px;
+
     border-radius: 15px;
 }
-
+.RR1C1R2C1 .text{
+    font-size: 25px;
+    margin-left: 19px;
+    margin-bottom: 20px;
+    margin-top:10px;
+     
+    margin-bottom: 15px;
+}
+.RR1C1R2C1 .img{
+    overflow: hidden;
+    height:60px; 
+    
+     width:232px; /* this is the wrapper width. iske aage agar kuch aya to hide hoga. isko badhake image ki width nahi badegi, image ka container badhega */
+}
+.RR1C1R2C1 .img img {
+    
+    width: 300px;
+    margin-left: 10px;
+    display: block;
+}
 .RR1C1R2C2 {
     background-color: #ffcc69;
     width: 232px;
     border-radius: 15px;
     height: 100%;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.RR1C1R2C2 .text{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top:20px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.RR1C1R2C2 .img{
+    margin-left:20px;
+    overflow: hidden;
 }
