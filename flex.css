@@ -282,3 +282,190 @@ body {
     margin-left:20px;
     overflow: hidden;
 }
+
+
+@media screen and (max-width: 767px) {
+
+    body {
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 25px;
+        box-shadow: none;
+    }
+
+    .col_left,
+    .col_right {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        gap: 25px;
+    }
+
+    .col_right {
+        order: -1;
+    }
+
+    .RR1,
+    .RR2,
+    .RR1C1,
+    .RR1C1R2 {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 25px;
+    }
+
+    .LR1,
+    .LR2,
+    .RR1C1R1,
+    .RR1C1R2C1,
+    .RR1C1R2C2,
+    .RR1C2,
+    .RR2C1,
+    .RR2C2 {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Social Media card */
+
+    .RR1C1R1 {
+        padding: 30px 15px;
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .RR1C1R1 .text {
+        white-space: normal;
+        font-size: 42px;
+        margin-top: 0;
+    }
+
+    .RR1C1R1 .text2 {
+        font-size: 42px;
+    }
+
+    .RR1C1R1 .img img {
+        margin-left: 0;
+    }
+
+    /* Manage multiple accounts */
+
+    .RR1C1R2C1 {
+        padding: 10px;
+    }
+
+    .RR1C1R2C1 .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .RR1C1R2C1 .img img {
+        margin-left: 0;
+    }
+
+    .RR1C1R2C1.img {
+        display: none;
+    }
+
+    /* Consistent posting schedule */
+
+    .RR1C1R2C2 .img img {
+        display: block;
+        height: auto;
+    }
+
+    /* Schedule to social media */
+
+    .RR1C2 {
+        padding: 25px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .RR1C2 .text,
+    .RR1C2 .text2 {
+        margin: 10px 0;
+    }
+
+    .RR1C2 .img {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .RR1C2 .img img {
+        height: auto;
+    }
+
+    /* Grow followers */
+
+    .RR2C2 {
+        order: -1;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .RR2C2.text {
+        width: 100%;
+        margin: 20px 0 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .RR2C2 .img img {
+        margin: 0;
+        height: auto;
+    }
+
+    /* Audience growth */
+
+    .RR2C1 {
+        padding: 15px;
+    }
+
+    .RR2C1.text1,
+    .RR2C1.text2 {
+        width: auto;
+        height: auto;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .RR2C1 .img {
+        width: 100%;
+    }
+
+    .RR2C1 .img img {
+        margin-left: 0;
+        height: auto;
+    }
+
+    /* Create and schedule content */
+
+    .LR1.text,
+    .LR2.text {
+        width: auto;
+        height: auto;
+        margin: 25px 20px 15px;
+    }
+
+    /* Remove forced desktop line breaks */
+
+    .container br {
+        display: none;
+    }
+}
