@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <!-- okay so making separate classes and separate shits in boht html and css is better. but then is it always that children (nested div) will always act ALONG flex if their parents have it. becuz not mentioning the parent class inside in html and css kinda disldges the relationship on text. but does the system still consider them children, but also allowing them to have separate properties? Yes — exactly. The browser still knows the nesting relationship from the HTML structure itself. You do not need to repeat the parent class on the child for it to be considered a child. you dont need to remind css about the child-->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="flex.css">
@@ -12,23 +14,47 @@
 <body>
     <div class="container">
         <div class="col_left">
-            <div class = "LR1"></div>
-            <div class = "LR2"></div>
+            <div class = "LR1">
+                <div class="LR1 text">Create and <br> schedule<br>  content <br> <span style="color:#7651dc"><em><i>quicker.</i></em></span></div>
+                <div class="LR1 img"></div>
+            </div>
+            <div class = "LR2">
+                <div class="LR2 text">Write your <br>content<br>using AI.</div>
+                <div class="LR2 img"></div>
+            </div>
         </div>
         <div class="col_right">
             <div class="RR1">
-                <div class="RR1 RR1C1">
-                    <div class="RR1 RR1C1R1"></div>
-                    <div class="RR1 RR1C1R2">
-                        <div class="RR1 RR1C1R2 RR1C1R2C1"></div>
-                        <div class="RR1 RR1C1R2C2 RR1C1R2C2"></div> 
+                <div class="RR1C1">
+                    <div class="RR1C1R1">
+                           <div class="text">
+                               Social Media <span style="color:#ffcc69;">10x</span>                
+                           </div>
+                       <!-- the problem i was encountering again and again was faster with AI mai AI niche aajara tha and text wasnt getting stacked properly and no text size wasnt the issue i had tried. the issue was i used .RR1C1R1.text in css. what this did was picked the element with both the classes and applied properties of both. meaning flex column was being applied on text too and random line break araha tha. the solution was .RR1C1R1 .text in the css. that means a .text element inside rr1 class. so this text would be independent, non flex. excellent. the learning ive taken on most the bugs i created was to use separate classes for everything, dont nest all classes becuz properties then stack up hoti jaati -->
+                           <div class="text2">
+                               <i>Faster</i> with AI
+                           </div>
+                        </div>
+                    <div class="RR1C1R2">
+                        <div class="RR1C1R2C1"></div>
+                        <div class="RR1C1R2C2"></div> 
                     </div>
                 </div>
-                <div class="RR1 RR1C2"></div>
+                <div class="RR1C2"></div>
             </div>
+
+
+
+
             <div class="RR2">
-                <div class="RR2 RR2C1"></div>
-                <div class="RR2 RR2C2"></div>
+                <div class="RR2C1">
+                    <div class="RR2C1 text1"><b>>56%</b></div><div class="RR2C1 text2"><br> faster audience growth</div>
+                    <div class="RR2C1 img"></div>
+                </div>
+                <div class="RR2C2">
+                    <div class="RR2C2 img"></div>
+                    <div class="RR2C2 text">Grow followers <br>with non-stop <br> content.</div>
+                </div>
             </div>
         </div>
     </div>
